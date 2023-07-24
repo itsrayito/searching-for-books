@@ -88,7 +88,7 @@ const LoginForm = () => {
                         placeHolder="Your password"
                         name="password"
                         onChange={handleInputChange}
-                        value={userFormatData.password}
+                        value={userFormData.password}
                         required
                         />
                         <Form.Control.Feedback type="invalid">

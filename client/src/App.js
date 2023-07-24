@@ -24,6 +24,7 @@ const authLink = setContext((_, { headers }) => {
   // this will return the headers to the context so the httpLink can read them
   return {
     headers: {
+      ...headers,
       authorization: token ? `Bearer ${token}` : "",
     },
   };
